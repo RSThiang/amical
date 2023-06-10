@@ -1,0 +1,113 @@
+<odoo>
+    <template id="amicales.fairedon">
+         <t t-call="amicales.header"/>
+
+        <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Types de Dons</h2>
+          <p>Faites votre participation pour la bonne cause. Veuillez nous contacter à travers le formulaire ci dessous</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-cash-stack" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Soutient Financier</a></h4>
+              <p class="description">Votre soutient financier est vivement solliciter pour la bonne marche de l'amicale.
+              Donc contactez nous</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar4-week" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">Soutient matériel</a></h4>
+              <p class="description">Tout objet ou matériel qui peut aider l'étudiant est la bien venu, donc n'hesitez pas
+              à nous contacter.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-chat-text" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Soutient Moral</a></h4>
+              <p class="description">Nous avons l'oreil attentif à toute sorte de sensi
+              ilisation qui peut aider les étudiants à réussir leur carrière</p>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+        <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Veuillez nous contacter si vous avez un quelconque don à faire</p>
+        </div>
+
+        <div>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27632.037836578067!2d-17.48785887042872!3d14.706080716629067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172891820e057%3A0x44c723c8e97e1dff!2sUniversite%20Cheikh%20Anta%20Diop%20(UCAD)!5e0!3m2!1sen!2ssn!4v1678126339198!5m2!1sen!2ssn" width="600" height="450" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        <div class="row">
+
+          <div class="col-3">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Adresse:</h4>
+                <p>Université Cheikh Anta Diop, Dakar</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@ucad.edu.sn</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Telephone:</h4>
+                <p>7798776543</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-8" >
+         <div class="my-custom">
+            <form action="#" method="post" >
+
+               <group>
+
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="True"/>
+
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="True"/>
+
+               </group>
+              <group>
+
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="True"/>
+
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required="True"></textarea>
+
+              </group>
+
+              <div class="text-center"><button type="submit">Envoyer Message</button></div>
+
+            </form>
+    </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+         <t t-call="amicales.footer"/>
+
+    </template>
+</odoo>

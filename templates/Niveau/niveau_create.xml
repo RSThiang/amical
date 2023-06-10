@@ -1,0 +1,24 @@
+<odoo>
+    <template id="createniveau">
+
+            <form action="/createN" method="post">
+                <div class="my-custom-class">
+                    <group>
+                        <group>
+                            <label for="niveau">Niveau:</label>
+                            <input type="text" name="niveau" id="niveau" required="true"/>
+                            <label for="departement_id">Departement:</label>
+                            <select name="departement_id" id="departement_id" required="true">
+                                <t t-foreach="departements" t-as="departement">
+                                    <option t-att-value="departement.id"><t t-esc="departement.nomDepartement"/></option>                                </t>
+                            </select>
+                        </group>
+                        <button type="submit">Enregistrer</button>
+
+                    </group>
+
+                </div>
+            </form>
+
+    </template>
+</odoo>

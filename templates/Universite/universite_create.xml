@@ -1,0 +1,20 @@
+<odoo>
+    <template id="createuniversite">
+
+            <form action="/createU" method="post">
+                <div class="my-custom-class">
+                    <group>
+                        <group>
+                            <label for="nomUniversite">Nom Universite:</label>
+                            <input type="text" name="nomUniversite" id="nomUniversite" required="true"/>
+                            <label for="adresse">Adresse:</label>
+                            <input type="text" name="adresse" id="adresse" required="true"/>
+                        </group>
+                            <button type="submit">Enregistrer</button>
+                    </group>
+
+                </div>
+            </form>
+
+    </template>
+</odoo>

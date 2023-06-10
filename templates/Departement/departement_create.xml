@@ -1,0 +1,25 @@
+<odoo>
+    <template id="createdepartement">
+
+            <form action="/createD" method="post">
+                <div class="my-custom-class">
+                    <group>
+                        <group>
+                            <label for="nomDepartement">Nom Departement:</label>
+                            <input type="text" name="nomDepartement" id="nomDepartement" required="true"/>
+                            <label for="faculte_id">Faculte:</label>
+                            <select name="faculte_id" id="faculte_id" required="true">
+                                <t t-foreach="facultes" t-as="faculte">
+                                    <option t-att-value="faculte.id"><t t-esc="faculte.nomFaculte"/></option>
+                                </t>
+                            </select>
+                        </group>
+                        <button type="submit">Enregistrer</button>
+
+                    </group>
+
+                </div>
+            </form>
+
+    </template>
+</odoo>

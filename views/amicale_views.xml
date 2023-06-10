@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="amicales_amicale_action" model="ir.actions.act_window">
+    <field name="name">Amicale</field>
+    <field name="res_model">amicales.amicale</field>
+    <field name="help" type="html" >
+         <data>
+            <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="amicales/static/src/css/style.css"/>
+            </xpath>
+            </data>
+        	<p class="o_view_nocontent_smiling_face" style="background-color: #f2f2f2;">
+            	Creer Amicale
+        	</p>
+    	</field>
+</record>
+
+ <record id="amicale_form_view" model="ir.ui.view">
+      <field name="name">amicales.amicale.form</field>
+      <field name="model">amicales.amicale</field>
+      <field name="arch" type="xml">
+           <data>
+            <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="amicales/static/src/css/style.css"/>
+            </xpath>
+            </data>
+        <form>
+          <sheet>
+               <div class="my-custom-class">
+
+            <group>
+              <group>
+                <field name="nomAmicale"/>
+                  <field name="membre_ids"/>
+          <field name="commision_ids"/>
+              </group>
+            </group>
+               </div>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+<record id="amicale_list_view" model="ir.ui.view">
+      <field name="name">amicales.amicale.list</field>
+      <field name="model">amicales.amicale</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nomAmicale"/>
+          <field name="membre_ids"/>
+          <field name="commision_ids"/>
+        </tree>
+      </field>
+    </record>
+<menuitem
+    id="menu_amicales_amicale"
+    name="amicale"
+    action="amicales_amicale_action"
+    parent="menu_amicales_root"
+    sequence="1"/>
+</odoo>

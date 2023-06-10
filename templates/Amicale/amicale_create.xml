@@ -1,0 +1,17 @@
+<odoo>
+    <template id="createamicale">
+            <form action="/createA" method="post">
+                <div class="my-custom-class">
+                    <group>
+                        <group>
+                            <label for="nomAmicale">Nom Amicale:</label>
+                            <input type="text" name="nomAmicale" id="nomAmicale" required="true"/>
+
+                        </group>
+                         <button type="submit">Enregistrer</button>
+                    </group>
+
+                </div>
+            </form>
+    </template>
+</odoo>

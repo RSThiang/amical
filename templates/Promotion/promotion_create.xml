@@ -1,0 +1,29 @@
+<odoo>
+    <template id="createpromotion">
+
+            <form action="/createP" method="post">
+                <div class="my-custom-class">
+                    <group>
+                        <group>
+                            <label for="promotion">Promotion:</label>
+                            <input type="text" name="promotion" id="promotion" required="true"/>
+                            <label for="datePromo">Nom Universite:</label>
+                            <br/>
+                            <input type="Date" name="datePromo" id="datePromo" required="true"/>
+                            <br/>
+                            <label for="description">Description:</label>
+                            <input type="text" name="description" id="description" required="true"/>
+                            <label for="niveau_id">Niveau:</label>
+                            <select name="niveau_id" id="niveau_id" required="true">
+                                <t t-foreach="niveaux" t-as="niveau">
+                                    <option t-att-value="niveau.id"><t t-esc="niveau.niveau"/></option>                                </t>
+                            </select>
+                        </group>
+                            <button type="submit">Enregistrer</button>
+                    </group>
+
+                </div>
+            </form>
+
+    </template>
+</odoo>

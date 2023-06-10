@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="amicales_universite_action" model="ir.actions.act_window">
+    <field name="name">Universite</field>
+    <field name="res_model">amicales.universite</field>
+    <field name="help" type="html">
+         <data>
+            <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="amicales/static/src/css/style.css"/>
+            </xpath>
+            </data>
+
+        	<p class="o_view_nocontent_smiling_face">
+            	Creer Universite
+        	</p>
+    	</field>
+</record>
+
+
+ <record id="universite_form_view" model="ir.ui.view">
+      <field name="name">amicales.universite.form</field>
+      <field name="model">amicales.universite</field>
+      <field name="arch" type="xml">
+        <data>
+            <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="amicales/static/src/css/style.css"/>
+            </xpath>
+        </data>
+        <form>
+          <sheet>
+               <div class="my-custom-class">
+
+            <group>
+              <group >
+                <field name="nomUniversite"/>
+
+                  <field name="adresse"/>
+                  <field name="faculte_ids"/>
+              </group>
+            </group>
+               </div>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+<record id="universite_list_view" model="ir.ui.view">
+      <field name="name">amicales.universite.list</field>
+      <field name="model">amicales.universite</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nomUniversite"/>
+          <field name="adresse"/>
+          <field name="faculte_ids"/>
+        </tree>
+      </field>
+    </record>
+
+<menuitem
+    id="menu_amicales_root"
+    name="Gestion amicale"
+    sequence="25"/>
+<menuitem
+    id="menu_amicales_universite"
+    name="Universite"
+    action="amicales_universite_action"
+    parent="menu_amicales_root"
+    sequence="1"/>
+</odoo>

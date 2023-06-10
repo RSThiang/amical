@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_amicales_universite,amicales.universite,model_amicales_universite,,1,1,1,1
+access_amicales_faculte,amicales.faculte,model_amicales_faculte,,1,1,1,1
+access_amicales_departement,amicales.departement,model_amicales_departement,,1,1,1,1
+access_amicales_niveau,amicales.niveau,model_amicales_niveau,,1,1,1,1
+access_amicales_promotion,amicales.promotion,model_amicales_promotion,,1,1,1,1
+access_amicales_etudiant,amicales.etudiant,model_amicales_etudiant,,1,1,1,1
+access_amicales_membre,amicales.membre,model_amicales_membre,,1,1,1,1
+access_amicales_commission,amicales.commission,model_amicales_commission,,1,1,1,1
+access_amicales_amicale,amicales.amicale,model_amicales_amicale,,1,1,1,1
+access_amicales_groupe,amicales.groupe,model_amicales_groupe,,1,1,1,1
+access_amicales_role,amicales.role,model_amicales_role,,1,1,1,1

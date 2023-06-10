@@ -1,0 +1,159 @@
+
+
+.my-custom-class {
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #F5F5DC;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left:100px;
+    margin-right:300px;
+    width:900px;
+    margin-top:20px;
+
+
+}
+
+label {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+   box-shadow: 0 2px 4px rgba(1, 2, 0, 0.2);
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 1rem;
+    background-color:#008B8B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:10px;
+    margin:10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.custom-page {
+    margin-top: 50px;
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+.tab-content {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+
+.nav-ul{
+display: flex;
+    padding: 1rem;
+}
+
+.nav-ul li{
+
+
+
+
+    border-radius: 5px;
+
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align:center;
+}
+.nav-ul ul li a{
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:10px;
+    margin:10px;
+
+    text-decoration: none;
+
+
+}
+/* Définir les styles de base pour la liste non ordonnée */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Définir les styles pour chaque élément de liste */
+li {
+  display: inline-block;
+}
+
+/* Définir les styles pour les liens */
+a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+   align-items: center;
+}
+
+/* Changer la couleur du lien lorsque la souris survole */
+a:hover {
+  background-color: #ccc;
+}
+.nav-u2l{
+    padding: 0rem;
+}
+
+.nav-ul2 li{
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    text-align:center;
+}
+.nav-ul2 ul li a{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:2px;
+    margin:2px;
+     text-decoration: none;
+}
+
+
+.my-custom-class2 {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #F5F5DC;
+    border-radius: 5px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
